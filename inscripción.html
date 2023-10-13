@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inscripción - Cristian's ball</title>
+</head>
+<body>
+    <nav>
+        <header>
+            <h1>Cristian's ball</h1>
+        </header>
+        <ul>
+            <li>Inicio</li>
+            <li>Reglamento</li>
+            <li>Premiación</li>
+            <li>Inscripción</li>
+        </ul>
+    </nav>
+    <main>
+        <form method="POST">
+            <fieldset>
+                <legend>Llena el formulario con cautela</legend>
+                <label for="equipo">Selecciona tu equipo</label>
+                <select id="equipo" name="equipo">
+                    <option value="">Selecciona un equipo</option>
+                    <option value="1">Los Spiders</option>
+                    <option value="2">The Bad Monkeys BS</option>
+                    <option value="3">AC Tlayudas</option>
+                </select>
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="nacimiento">Fecha de nacimiento</label>
+                <input type="date" id="nacimiento" name="nacimiento" required>
+                <label for="telefono">Número telefónico</label>
+                <input type="tel" id="telefono" name="telefono">
+                <fieldset>
+                    <legend>Escoge tu categoría</legend>
+                    <input type="radio" id="menor" name="categoria" value="menor">
+                    <label for="menor">Menor</label>
+                    <input type="radio" id="mayor" name="categoria" value="mayor">
+                    <label for="mayor">Mayor</label>
+                    <input type="radio" id="veteranos" name="categoria" value="veteranos">
+                    <label for="veteranos">Veteranos</label>
+                </fieldset>
+                <input type="submit" value="Enviar">
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
