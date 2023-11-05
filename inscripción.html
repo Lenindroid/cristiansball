@@ -19,9 +19,21 @@
         </ul>
     </nav>
     <main>
-        <form method="POST">
+        <h2>Formulario de inscripción</h2>
+        <p>Llena el siguiente formulario para poder inscribirte.</p>
+        <!---Method es el protocolo http y action a donde se van los datos-->
+        <form method="POST" action="./ficticio.php">
             <fieldset>
-                <legend>Llena el formulario con cautela</legend>
+                <legend>Datos personales</legend>
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="nacimiento">Fecha de nacimiento</label>
+                <input type="date" id="nacimiento" name="nacimiento" required>
+                <label for="telefono">Número telefónico</label>
+                <input type="tel" id="telefono" name="telefono">
+            </fieldset>
+            <fieldset>
+                <legend>Elige tu equipo</legend>
                 <label for="equipo">Selecciona tu equipo</label>
                 <select id="equipo" name="equipo">
                     <option value="">Selecciona un equipo</option>
@@ -29,23 +41,17 @@
                     <option value="2">The Bad Monkeys BS</option>
                     <option value="3">AC Tlayudas</option>
                 </select>
-                <label for="nombre">Nombre completo</label>
-                <input type="text" id="nombre" name="nombre" required>
-                <label for="nacimiento">Fecha de nacimiento</label>
-                <input type="date" id="nacimiento" name="nacimiento" required>
-                <label for="telefono">Número telefónico</label>
-                <input type="tel" id="telefono" name="telefono">
-                <fieldset>
-                    <legend>Escoge tu categoría</legend>
-                    <input type="radio" id="menor" name="categoria" value="menor">
-                    <label for="menor">Menor</label>
-                    <input type="radio" id="mayor" name="categoria" value="mayor">
-                    <label for="mayor">Mayor</label>
-                    <input type="radio" id="veteranos" name="categoria" value="veteranos">
-                    <label for="veteranos">Veteranos</label>
-                </fieldset>
-                <input type="submit" value="Enviar">
             </fieldset>
+            <fieldset>
+                <legend>Elige la categoría que corresponda</legend>
+                <input type="radio" id="menor" name="categoria" value="menor">
+                <label for="menor">Juevenil</label>
+                <input type="radio" id="mayor" name="categoria" value="mayor">
+                <label for="mayor">Adultos</label>
+                <input type="radio" id="veteranos" name="categoria" value="veteranos">
+                <label for="veteranos">Veteranos</label>
+            </fieldset>
+                <input type="submit" value="Enviar">
         </form>
     </main>
 </body>
