@@ -13,29 +13,60 @@
 
 body {
     background-color: var(--color-second);
+    font-family: Oswald, Roboto, Lato, sans-serif;
 }
 
 nav {
     background-color: var(--color-first);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    color: var(--color-second);
+}
+
+h1 {
+    margin-left: 15px;
 }
 
 nav > ul {
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
     list-style-type: none;
-    font-size: 20px;
-    font-family: Oswald, Roboto, Lato, sans-serif;
-    color: var(--color-second)
 }
 
-.mainParagraph {
-    font-size: 20px;
+nav > ul > li {
+    display: block;
+    padding: 20px;
 }
+  
+a:visited {
+    color: var(--color-second);
+}
+  
+a:hover {
+    color: var(--color-fourth);
+}
+  
+a:active {
+    color: var(--color-third);
+}
+
 
 p {
     color: #000;
-    font-family: Oswald, Roboto, Lato, sans-serif;
     font-size: 20px;
+}
+
+.mainParagraph, h2 { /*You can explain  this switching this with p*/
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 10px
 }
